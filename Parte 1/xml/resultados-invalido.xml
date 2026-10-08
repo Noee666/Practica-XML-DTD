@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
+<liga nombre="Liga MX" temporada="Apertura 2026">
+    <jornada numero="10" fecha="2026-09-27" competencia="Liga MX - Apertura 2026">
+        <!-- Prueba negativa: falta equipoVisitante y el partido no puede validarse. -->
+        <partido id="P999">
+            <equipoLocal>Pumas UNAM</equipoLocal>
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>3</golesVisitante>
+            </marcador>
+            <estadio>Estadio Olímpico Universitario</estadio>
+            <estado>Finalizado</estado>
+            <goles/>
+            <estadisticas/>
+        </partido>
+    </jornada>
+</liga>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
+<liga nombre="Liga MX" temporada="Apertura 2026">
+    <jornada numero="10" fecha="2026-09-27" competencia="Liga MX - Apertura 2026">
+        <partido id="P001">
+            <equipoLocal>Pumas UNAM</equipoLocal>
+            <equipoVisitante>Atlético San Luis</equipoVisitante>
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>3</golesVisitante>
+            </marcador>
+            <estadio>Estadio Olímpico Universitario</estadio>
+            <estado>Finalizado</estado>
+            <goles>
+                <gol equipo="visitante" minuto="22" jugador="Sébastien Salles-Lamonge"/>
+                <gol equipo="local" minuto="51" jugador="Rodrigo López"/>
+                <gol equipo="visitante" minuto="54" jugador="David Rodríguez"/>
+                <gol equipo="visitante" minuto="78" jugador="Sébastien Salles-Lamonge"/>
+                <gol equipo="local" minuto="89" jugador="Juninho"/>
+            </goles>
+            <estadisticas>
+                <!-- ESPN no expuso en los resultados indexados consultados las estadísticas numéricas de este partido. -->
+            </estadisticas>
+        </partido>
+
+        <partido id="P002">
+            <equipoLocal>Tigres UANL</equipoLocal>
+            <equipoVisitante>Puebla</equipoVisitante>
+            <marcador>
+                <golesLocal>1</golesLocal>
+                <golesVisitante>0</golesVisitante>
+            </marcador>
+            <estadio>Estadio Universitario</estadio>
+            <estado>Finalizado</estado>
+            <goles>
+                <gol equipo="local" minuto="53" jugador="Juan Brunetta"/>
+            </goles>
+            <estadisticas>
+                <!-- ESPN no expuso en los resultados indexados consultados las estadísticas numéricas de este partido. -->
+            </estadisticas>
+        </partido>
+
+        <partido id="P003">
+            <equipoLocal>Santos Laguna</equipoLocal>
+            <equipoVisitante>Pachuca</equipoVisitante>
+            <marcador>
+                <golesLocal>1</golesLocal>
+                <golesVisitante>0</golesVisitante>
+            </marcador>
+            <estadio>Estadio Corona</estadio>
+            <estado>Finalizado</estado>
+            <goles>
+                <gol equipo="local" minuto="47" jugador="Fran Villalba"/>
+            </goles>
+            <estadisticas>
+                <!-- ESPN no expuso en los resultados indexados consultados las estadísticas numéricas de este partido. -->
+            </estadisticas>
+        </partido>
+
+        <partido id="P004">
+            <equipoLocal>Cruz Azul</equipoLocal>
+            <equipoVisitante>Toluca</equipoVisitante>
+            <marcador>
+                <golesLocal>3</golesLocal>
+                <golesVisitante>3</golesVisitante>
+            </marcador>
+            <estadio>Estadio Banorte</estadio>
+            <estado>Finalizado</estado>
+            <goles>
+                <gol equipo="local" minuto="6" jugador="Nicolás Ibáñez"/>
+                <gol equipo="local" minuto="37" jugador="Gabriel Fernández"/>
+                <gol equipo="visitante" minuto="54" jugador="Helinho"/>
+                <gol equipo="visitante" minuto="55" jugador="Alexis Vega"/>
+                <gol equipo="visitante" minuto="77" jugador="Alexis Vega"/>
+                <gol equipo="local" minuto="94" jugador="Gabriel Fernández"/>
+            </goles>
+            <estadisticas>
+                <!-- ESPN no expuso en los resultados indexados consultados las estadísticas numéricas de este partido. -->
+            </estadisticas>
+        </partido>
+    </jornada>
+</liga>

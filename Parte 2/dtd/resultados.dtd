@@ -1,0 +1,42 @@
+<!ELEMENT liga (jornada+)>
+<!ATTLIST liga
+    nombre CDATA #REQUIRED
+    temporada CDATA #REQUIRED
+>
+
+<!ELEMENT jornada (partido+)>
+<!ATTLIST jornada
+    numero CDATA #REQUIRED
+    fecha CDATA #REQUIRED
+    competencia CDATA #REQUIRED
+>
+
+<!ELEMENT partido (equipoLocal, equipoVisitante, marcador, estadio, estado, goles, estadisticas)>
+<!ATTLIST partido
+    id ID #REQUIRED
+>
+
+<!ELEMENT equipoLocal (#PCDATA)>
+<!ELEMENT equipoVisitante (#PCDATA)>
+
+<!ELEMENT marcador (golesLocal, golesVisitante)>
+<!ELEMENT golesLocal (#PCDATA)>
+<!ELEMENT golesVisitante (#PCDATA)>
+
+<!ELEMENT estadio (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+
+<!ELEMENT goles (gol*)>
+<!ELEMENT gol EMPTY>
+<!ATTLIST gol
+    equipo (local|visitante) #REQUIRED
+    minuto CDATA #REQUIRED
+    jugador CDATA #REQUIRED
+>
+
+<!ELEMENT estadisticas (estadistica*)>
+<!ELEMENT estadistica (#PCDATA)>
+<!ATTLIST estadistica
+    nombre CDATA #REQUIRED
+    equipo (local|visitante) #REQUIRED
+>
