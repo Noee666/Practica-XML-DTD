@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<liga
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/resultados.xsd"
+    competencia="Liga MX Apertura"
+    temporada="2026">
+
+    <jornada numero="10">
+
+        <partido id="P001">
+            <fecha>2026-09-27</fecha>
+            <equipoLocal>Pumas</equipoLocal>
+            <equipoVisitante>Atletico de San Luis</equipoVisitante>
+
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>3</golesVisitante>
+            </marcador>
+
+        </partido>
+
+    </jornada>
+
+</liga>

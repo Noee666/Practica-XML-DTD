@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="liga">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="jornada" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="partido" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="fecha" type="xs:date"/>
+                                        <xs:element name="equipoLocal" type="xs:string"/>
+                                        <xs:element name="equipoVisitante" type="xs:string"/>
+
+                                        <xs:element name="marcador">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                    <xs:element name="golesLocal" type="xs:nonNegativeInteger"/>
+                                                    <xs:element name="golesVisitante" type="xs:nonNegativeInteger"/>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="estadisticas" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+
+                                                    <xs:element name="local">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="posesion" type="xs:decimal" minOccurs="0"/>
+                                                                <xs:element name="tiros" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosPuerta" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosFuera" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosBloqueados" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="corners" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="faltas" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="fuerasDeJuego" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+
+                                                    <xs:element name="visitante">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="posesion" type="xs:decimal" minOccurs="0"/>
+                                                                <xs:element name="tiros" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosPuerta" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosFuera" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="tirosBloqueados" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="corners" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="faltas" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                                <xs:element name="fuerasDeJuego" type="xs:nonNegativeInteger" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+
+                                    <xs:attribute name="id"
+                                                  type="xs:ID"
+                                                  use="required"/>
+
+                                    <xs:attribute name="estadio"
+                                                  type="xs:string"
+                                                  use="optional"/>
+
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <xs:attribute name="numero"
+                                      type="xs:positiveInteger"
+                                      use="required"/>
+
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+
+            <xs:attribute name="competencia"
+                          type="xs:string"
+                          use="required"/>
+
+            <xs:attribute name="temporada"
+                          type="xs:positiveInteger"
+                          use="required"/>
+
+        </xs:complexType>    
+    </xs:element>
+
+</xs:schema>
